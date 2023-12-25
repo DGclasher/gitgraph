@@ -13,3 +13,20 @@ Git Grapher is a simple and interactive web application that allows users to vis
 1. Enter your GitHub username.
 2. Click the "Submit" button to generate your personalized contribution graph.
 3. Explore and share your coding journey with the Git Grapher community.
+
+### Workflow
++ User Input:
+  + Users access the application through the root path ("/").
+  + They are prompted to enter their GitHub username in a designated form.
+
++ Submission:
+  + Users submit the form with their GitHub username.
+  + The application captures the username from the query parameter in the URL.
+
++ Rendering:
+  + The server renders the "index" view, passing the username as a dynamic parameter.
+  + The EJS template dynamically displays the GitHub contribution chart for the entered username.
+
++ GitHub Chart Display:
+  + The application fetches the GitHub contribution chart image based on the username.
+  + The fetched image is displayed on the page, allowing users to visualize their GitHub contributions.
