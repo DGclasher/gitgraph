@@ -1,0 +1,27 @@
+{
+  "name": "gitgraph",
+  "version": "1.0.0",
+  "description": "contribution graph of users in github",
+  "main": "index.js",
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DGclasher/gitgraph.git"
+  },
+  "author": "DGclasher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DGclasher/gitgraph/issues"
+  },
+  "homepage": "https://github.com/DGclasher/gitgraph#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
