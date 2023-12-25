@@ -1,0 +1,23 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Git Grapher</title>
+</head>
+<body class="bg-zinc-800 text-white flex justify-center h-screen w-screen">
+
+    <div class="text-center mt-12">
+        <h1 class="text-2xl mb-4">Git Grapher</h1>
+        <form action="/" method="GET" class="mb-4 text-black">
+            <input type="text" name="username" placeholder="Enter your username" class="p-1 rounded" />
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white p-1 font-bold rounded">Submit</button>
+        </form>
+        <h2 class="p-2">Graph for user <%= username %></h2>
+        <img src="https://ghchart.rshah.org/<%= username %>" alt="gh-chart" class="p-2 max-w-full"/>
+    </div>
+    <div class="absolute bottom-2 left-2 text-gray-300 text-xs">
+        &#169; <a href="https://dgclasher.github.io" target="_blank" class="hover:text-lime-700">DGclasher</a>
+    </div>
+</body>
+</html>
